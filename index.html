@@ -8,13 +8,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <title>SAO</title>
     <link rel="Icon" href="/Assets/Site-favicon.ico">
+    <link rel="stylesheet" href="/Tipser.css";></link>
     <style>
+      @font-face {
+        font-family: "SAOUI";
+        font-size: 20%;
+        src: url(/Assets/SAOUI-Regular.otf);
+      }
+      .fontda
+      {
+        font-family: "SAOUI";
+      }
 
       body {
         background-color: black;
         background-image: url('/Assets/Background.jpg');
         margin:0px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
 
       .accordion {
@@ -27,7 +36,7 @@
         text-align: left;
         outline: none;
         font-size: 15px;
-        transition: 0.4s;
+        transition: 1.0s;
       }
       
       .active, .accordion:hover {
@@ -69,7 +78,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">PROJECT SAO</a>
+          <a class="navbar-brand fontda" href="#">PROJECT SAO</a>
           </div>
         </div>
       </nav>
@@ -85,8 +94,8 @@
       </div>
 
       <!-- flush -->
-      <button class="accordion bg-dark text-white">Filled Character</button>
-      <div class="panel bg-dark">
+      <button class="accordion bg-dark text-white fontda bordera">Filled Character</button>
+      <div class="panel bg-dark fontda">
         <p>Lorem </p>
         <div class="container">
           <div class="row justify-content-start">
@@ -114,17 +123,17 @@
         <div class="container">
           <div class="row justify-content-start">
             <div class="col-6">
-              <div class="polaroid">
+              <div class="polaroid bg-dark">
                 <img src="/Character/Alice.png" style="width:100%">
-                <div class="container">
+                <div class="container text-light">
                 <p>Alice</p>
                 </div>
               </div>              
             </div>
             <div class="col-6">
-              <div class="polaroid">
+              <div class="polaroid bg-dark">
                 <img src="/Character/Eugeo.png"  style="width:100%">
-                <div class="container">
+                <div class="container bg-dark text-light">
                 <p>Eugeo</p>
                 </div>
               </div>              
@@ -135,17 +144,17 @@
         <div class="container">
           <div class="row justify-content-start">
             <div class="col-6">
-              <div class="polaroid">
+              <div class="polaroid bg-dark">
                 <img src="/Character/Yuna.png" style="width:100%">
-                <div class="container">
+                <div class="container bg-dark text-light">
                 <p>Yuna</p>
                 </div>
               </div>              
             </div>
             <div class="col-6">
-              <div class="polaroid">
+              <div class="polaroid bg-dark">
                 <img src="/Character/Eiji.png"  style="width:100%">
-                <div class="container">
+                <div class="container bg-dark text-light">
                 <p>Eiji</p>
                 </div>
               </div>              
@@ -156,17 +165,17 @@
         <div class="container">
           <div class="row justify-content-start">
             <div class="col-6">
-              <div class="polaroid">
+              <div class="polaroid bg-dark">
                 <img src="/Character/Klein.png" style="width:100%">
-                <div class="container">
+                <div class="container bg-dark text-light">
                 <p>Klein</p>
                 </div>
               </div>              
             </div>
             <div class="col-6">
-              <div class="polaroid">
+              <div class="polaroid bg-dark">
                 <img src="/Character/Silicca.png"  style="width:100%">
-                <div class="container">
+                <div class="container bg-dark text-light">
                 <p>Silicca</p>
                 </div>
               </div>              
@@ -177,14 +186,14 @@
         <div class="container">
           <div class="row justify-content-start">
             <div class="col-6">
-              <div class="polaroid">
+              <div class="polaroid bg-dark">
                 <img src="/Character/Death Gun.png" style="width:100%">
-                <div class="container">
+                <div class="container bg-dark text-light">
                 <p>Death Gun</p>
                 </div>
               </div>              
             </div>
-            <div class="col-6">
+            <div class="col-6"> 
               <div class="polaroid">
                 <img src="/Character/Vassco.png"  style="width:100%">
                 <div class="container">
@@ -196,8 +205,8 @@
         </div>
         
       </div>
-      
-      <button class="accordion bg-dark text-light border-light">Unfilled RECOMENDED Character</button>
+      <!--Flush 2-->
+      <button class="accordion bg-dark text-light border-light fontda">Unfilled RECOMENDED Character</button>
       <div class="panel">
         <p>Lorem </p>
       </div>
@@ -206,8 +215,10 @@
         var acc = document.getElementsByClassName("accordion");
         var i;
         
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
+        for (i = 0; i < acc.length; i++) 
+        {
+          acc[i].addEventListener("click", function()
+         {
             this.classList.toggle("active");
             var panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
@@ -218,6 +229,12 @@
           });
         }
         </script>
+</div>
+<!--Typewriter-->
+<div class="container">
+  <div class="typewriter fontda">
+    <h1>Welcome To Sword Art Online . . .</h1>
+  </div>
 </div>
 </body>
 </html>
