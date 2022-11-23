@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "SAOUI";
+    font-size: 20%;
+    src: url(/Assets/SAOUI-Regular.otf);
+  }
+  .fontda
+  {
+    font-family: "SAOUI";
+  }
+
+  body {
+    background-color: black;
+    background-image: url('/Assets/Images/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0px;
+  }
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 1.0s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  }
+
+  div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  }
+
+  div.container {
+  text-align: center;
+  padding: 10px 20px;
+  }
+
+  div.main {
+    height: 20rem;
+    background-image: url('../Images/Background.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+   }
+   
+   a:hover, a:visited, a:link, a:active
+   {
+     text-decoration: none;
+   }
+   
+   .link {
+     color: crimson;
+   }
+   
+   .typewriter {
+     height: 200px;
+   }
+   
+   .responsive {
+     max-width: 100%;
+     height: auto;
+   }
