@@ -8,7 +8,8 @@ body {
   font-family: "SAOUI";
   margin: 0;
   background-image: url('../Images/bgbody.jpg');
-  background-size: center ;
+  background-position: center;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -53,9 +54,10 @@ div.polaroid {
 div.container {
   text-align: center;
   width: 100%;
+}
 
 div.main {
- height: 30rem;
+  height: 30rem;
 }
 
 a:hover, a:visited, a:link, a:active
